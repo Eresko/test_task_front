@@ -19,7 +19,7 @@ const lastPage = computed(
 )
 const totalPageDisplayed = computed(() =>
     lastPage.value > props.maxLinksDisplayed - 2
-        ? props.maxLinksDisplayed - 2
+        ? props.maxLinksDisplayed 
         : lastPage.value
 )
 const changePosition = (key) => {
